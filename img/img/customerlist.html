@@ -1,0 +1,199 @@
+<!--บรรทัด 1- 114 คือ ไม่ต้องสนใจมันคือแถบ-->
+<!--บ.120 ช่องเสริชหา--><!--บ.135 ตารางโชว์ ไอดีชื่อลูกค้า-->
+<!---->
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrapK.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebarK.css" rel="stylesheet" type="text/css" href="css/styleK.css">
+    <style type="text/css">
+
+    body {
+      background-image:url('img/bgAC.png');
+      width: 120%;
+      height: 100%;
+    }
+
+</style>
+    
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+     <nav id="mainNav" class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left">
+                    
+                    <li>
+                        <a href= "History.php"><?php echo $_SESSION[username] ?></a>
+                        </li>
+                        <li>
+                        <a href= "first page01.html">Logout</a>
+                        </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+
+
+
+
+</head>
+
+<body>
+     
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li style="margin-top: -30px; margin-left:-90px">
+                    <img src ="img/logo2.png" style="width:300px;">
+                </li>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">Customer List</a>
+                </li>
+                <li class='has-sub'><a href="act.html"><span>Register Customer</span></a>
+                               
+                        </li>
+
+                <li>
+                    <a href="Greenli.html">Record Order</a>
+                </li>
+                <li>
+                    <a href="his.html">Add Amount Of Sugarcane</a>
+                </li>
+                <li>
+                    <a href="#">Summary per year</a>
+                </li>
+                <li>
+                    <a href="Space.php">Log Out</a>
+                </li>
+               
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <h3>
+              
+            <!--ช่องเสริจหา-->
+			<form action="customerlist.php" method="post" target="myIframe">
+			<h3><img src="img/ha1.png" align="center" style="padding-left: 250px ;"></h3>
+				 Input ID's customer : <input type="text" name="id" placeholder="id">
+
+				
+
+				<button type="submit" class="btn btn-primary">search</button>
+			
+			</form>
+
+            <!-- เสริชแล้วขึ้นเป็นตารางดีกว่ามั้ย -->
+			<!--<iframe name="myIframe">
+			</iframe>-->
+			<!--ตารางโชว์-->
+			<style>
+				table {
+						    border-collapse: collapse;
+						    width: 80%;
+						}
+
+						th, td {
+						    text-align: left;
+						    padding: 6px;
+						}
+
+						tr:nth-child(even){background-color: #f2f2f2}
+						</style>
+						</head>
+						<body>
+
+						<h2>Customer</h2>
+						<p> </p>
+
+						<table>
+						  <tr>
+						    <th>ID</th>
+						    <th>Name</th>
+						    <th></th>
+						  </tr>
+						  <tr>
+						    <td>000226</td>
+						    <td>jeniuss</td>
+						    <td>
+						    	<a class="btn" href="actEasy.html">Purchase</a></button><!--ปุ่มกด-->
+						    </td>
+						  </tr>
+						 </table>
+
+
+		</div>
+
+
+        </div>
+    </div>
+</div>
+        <!-- Page Content -->
+        
+
+    <!-- jQuery -->
+    <script src="js/jqueryK.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrapK.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
+
+
+
+
