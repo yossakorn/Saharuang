@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>compareOrder</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrapK.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebarK.css" rel="stylesheet" type="text/css" href="css/styleK.css">
+    <style type="text/css">
+
+    body {
+      background-image:url('img/bgAC.png');
+      width: 100%;
+      height: 100%;
+    }
+
+</style>
+    
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+   
+
+</head>
+
+<body>
+     
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li style="margin-top: -30px; margin-left:-90px">
+                    <img src="img/logo2.png" style="width:300px;">
+                    </li>
+                </li>
+                <li>
+                    <a href="Home.html">Home</a>
+                </li>
+                <li>
+                    <a href="customer.html">Customer</a>
+                </li>
+
+                <li>
+                    <a href="customerlist.html">CustomerList</a>
+                </li>
+                <li>
+                    <a href="">Compare</a>
+                </li>
+                <li>
+                    <a href="">Calculate Product</a>
+                </li>
+                <li>
+                    <a href="record_order.html">Record Order</a>
+                </li>
+                <li>
+                    <a href="summary.html">Summary Per year</a>
+                </li>
+               
+            </ul>
+        </div>
+
+        <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <h3>
+            <br><br>
+              <title>Compare Order</title>
+<form action="compare_order.php" method="post">
+  <center>
+  <h3><img src="img/bgaa.png" align="center" style="padding-left: 250px ;"></h3>
+
+  <p style="color: #777">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sugar :<input type="number" name="o_sugar" value="0">
+  <input type="variable" name="total_sugar" value="<?php echo &quot;$sugar_sum&quot;;?>">
+  <input type="submit" name="sugar_cal" value="Calculate" class="btn btn-primary"><br>
+  <br><br>
+  molasses :<input type="number" name="o_molasses" value="0">
+  <input type="variable" name="total_sugar" value="<?php echo &quot;$molasses_sum&quot;;?>">
+  <input type="submit" name="molasses_cal" value="Calculate" class="btn btn-primary"><br>
+<br><br>
+  bagasses :<input type="number" name="o_bagasses" value="0">
+  <input type="variable" name="total_sugar" value="<?php echo &quot;$bagasses_sum&quot;;?>">
+  <input type="submit" name="bagasses_cal" value="Calculate" class="btn btn-primary"><br>
+  </p>
+  </center>
+</form>
+
+
+
+
+            
+            </h3>
+            <p1>
+            
+
+
+            
+
+        </p1></div>
+    </div>
+</div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        
+
+    <!-- jQuery -->
+    <script src="js/jqueryK.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrapK.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+
+
+
+</div></body>
+
+</html>
